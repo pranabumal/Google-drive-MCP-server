@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "google-drive": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["src/server.py"],
+      "cwd": "${workspaceFolder}/Google drive MCP server",
+      "env": {
+        "GOOGLE_OAUTH_CLIENT_ID": "${env:GOOGLE_OAUTH_CLIENT_ID}",
+        "GOOGLE_OAUTH_CLIENT_SECRET": "${env:GOOGLE_OAUTH_CLIENT_SECRET}"
+      }
+    }
+  }
+}
